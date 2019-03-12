@@ -1,0 +1,87 @@
+{
+	"name": "gosearch",
+	"displayName": "GoSearch",
+	"description": "Search for Go packages via go-search.org",
+	"version": "0.0.1",
+	"engines": {
+		"vscode": "^1.29.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onCommand:goSearch.search",
+		"onCommand:goSearch.explorer.search"
+	],
+	"main": "./out/extension.js",
+	"contributes": {
+		"viewsContainers": {
+			"activitybar": [
+				{
+					"id": "goSearch",
+					"title": "Go Search",
+					"icon": "./media/gopher.svg"
+				}
+			]
+		},
+		"views": {
+			"goSearch": [
+				{
+					"id": "goSearchProvider",
+					"name": "EXPLORER"
+				}
+			]
+		},
+		"commands": [
+			{
+				"command": "goSearch.search",
+				"title": "Search",
+				"category": "GoSearch"
+			},
+			{
+				"command": "goSearch.explorer.refresh",
+				"title": "Refresh",
+				"icon": {
+					"light": "resources/light/icon-refresh.svg",
+					"dark": "resources/dark/icon-refresh.svg"
+				}
+			},
+			{
+				"command": "goSearch.explorer.search",
+				"title": "Search",
+				"icon": {
+					"light": "resources/light/icon-search.svg",
+					"dark": "resources/dark/icon-search.svg"
+				}
+			}
+		],
+		"menus": {
+			"view/title": [
+				{
+					"command": "goSearch.explorer.refresh",
+					"when": "view == goSearchProvider",
+					"group": "navigation"
+				},
+				{
+					"command": "goSearch.explorer.search",
+					"when": "view == goSearchProvider",
+					"group": "navigation"
+				}
+			]
+		}
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"test": "npm run compile && node ./node_modules/vscode/bin/test"
+	},
+	"devDependencies": {
+		"typescript": "^3.3.1",
+		"vscode": "^1.1.28",
+		"tslint": "^5.12.1",
+		"@types/node": "^10.12.21",
+		"@types/mocha": "^2.2.42"
+	}
+}
