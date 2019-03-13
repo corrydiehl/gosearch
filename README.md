@@ -1,20 +1,22 @@
-# gosearch README
+# GoSearch
 
-This is the README for your extension "gosearch". After writing up a brief description, we recommend including the following sections.
+I just love Go (err... Golang) so... This is the beginning of a new VSCode extension called GoSearch that will allow you to search for new packages and "go get" them from within VSCode. All of this is being enabled by this super cool guy that gave us [go-search](https://www.go-search.org). Once I make some more progress, I'm going to shout him out and give him all the kudos he deserves. This isn't anything but a dumb VSCode extension.
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+GoSearch allows you to search for Go packages via [go-search.org](https://www.go-search.org)
 
-For example if there is an image subfolder under your extension project workspace:
+After you've found the package you want, you can use the context menu to "go get" the package.
 
-\!\[feature X\]\(images/feature-x.png\)
+I'll add some screenshots here (in the gibberish area) once I get further along.
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+\!\[feature X\]\(images/feature-x.png\) <-- WFT is that??
+
+> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow. (GAHH!!! HOW DO YOU DO ANIMATIONS?!?!?)
 
 ## Requirements
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+The version of Go you have installed will dictate the version of the Go package you are trying to install.
 
 ## Extension Settings
 
@@ -29,37 +31,34 @@ This extension contributes the following settings:
 
 ## Known Issues
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+It still sucks because it isn't feature complete just yet :)
 
 ## Release Notes
 
-Users appreciate release notes as you update your extension.
+There's no releases yet, stay tuned!
 
 ### 1.0.0
 
-Initial release of ...
+I'll probably start at v0.1 but... Initial release of ...
 
 ### 1.0.1
 
+Lol wat? We're still at v0.1<br/>
 Fixed issue #.
 
 ### 1.1.0
 
+Still going?!?!? ZOMG! GO BACK TO v0.1<br/>
 Added features X, Y, and Z.
 
 -----------------------------------------------------------------------------------------------------------
 
-## Working with Markdown
+## Hacking
 
-**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
+If you want to hack on this extension, do a `git clone` on this repo, then do `npm install` and have fun!
 
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (macOS) to see a list of Markdown snippets
+## Contributing
 
-### For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
+Please halp! I need SVG artwork, suggestions and pull requests. Go do the thing...
 
 **Enjoy!**
